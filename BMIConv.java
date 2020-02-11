@@ -4,15 +4,13 @@ public class BMIConv {
 	public static void main(String[] arguments) {
 		Scanner scnr = new Scanner(System.in);
 		
-		
+		//Getting Names
 		System.out.println("Hello enter your name person 1: ");
-		System.out.println("Hello enter your name person 2: ");
-		System.out.println("Hello enter your name person 3: ");
-		
 		String name1 = scnr.next();
+		System.out.println("Hello enter your name person 2: ");
 		String name2 = scnr.next();
+		System.out.println("Hello enter your name person 3: ");
 		String name3 = scnr.next();
-	
 		
 		//1ST PERSON
 		System.out.println("Enter Weight in pounds, " + name1 + " : ");
@@ -35,15 +33,15 @@ public class BMIConv {
 		
 		//CALC FOR P1
 		double calcBMI1 = (givenWeight1 * 703) / (Math.pow(givenHeight1, 2));
-		System.out.println(""+ name1 + "Your BMI is " + calcBMI1);
+		System.out.printf("%s, your BMI is %.2f\n", name1, calcBMI1);
 		
 		//CALC FOR P2
 		double calcBMI2 = (givenWeight2 * 703) / (Math.pow(givenHeight2, 2));
-		System.out.println("" + name2 + "Your BMI is " + calcBMI2);
+		System.out.printf("%s, your BMI is %.2f\n", name2, calcBMI2);
 		
 		//CALC FOR P3
 		double calcBMI3 = (givenWeight3 * 703) / (Math.pow(givenHeight3, 2));
-		System.out.println("" + name3 +" Your BMI is " + calcBMI3);
+		System.out.printf("%s, your BMI is %.2f\n", name3, calcBMI3);
 		
 		
 	}
